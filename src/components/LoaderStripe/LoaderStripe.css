@@ -1,0 +1,53 @@
+.loader-stripe {
+  background-color: #f3f3f3;
+  overflow: hidden;
+}
+
+.loader-stripe:after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  display: block;
+
+  background: -moz-linear-gradient(
+    left,
+    rgba(230, 230, 230, 0) 0%,
+    rgba(221, 221, 221, 0.2) 42%,
+    rgba(221, 221, 221, 0.2) 62%,
+    rgba(230, 230, 230, 0) 100%
+  ); /* FF3.6-15 */
+
+  background: -webkit-linear-gradient(
+    left,
+    rgba(230, 230, 230, 0) 0%,
+    rgba(221, 221, 221, 0.2) 42%,
+    rgba(221, 221, 221, 0.2) 62%,
+    rgba(230, 230, 230, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+
+  background: linear-gradient(
+    to right,
+    rgba(230, 230, 230, 0) 0%,
+    rgba(221, 221, 221, 0.2) 42%,
+    rgba(221, 221, 221, 0.2) 62%,
+    rgba(230, 230, 230, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr='#00e6e6e6',
+      endColorstr='#00e6e6e6',
+      GradientType=1
+    ); /* IE6-9 */
+
+  animation: load 1.2s ease-out infinite;
+}
+
+@keyframes load {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(200%);
+  }
+}
