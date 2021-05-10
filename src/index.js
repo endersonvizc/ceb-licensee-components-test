@@ -1,3 +1,4 @@
 import CourseLogo from './components/CourseLogo';
+import CourseRegisterInformation from './components/CourseRegisterInformation';
 
-export { CourseLogo }
+export { CourseLogo, CourseRegisterInformation };

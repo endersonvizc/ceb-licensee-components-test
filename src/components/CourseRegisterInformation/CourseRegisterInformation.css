@@ -1,0 +1,212 @@
+.floating-content {
+  padding: 0px 10px 0px 10px;
+  margin-top: 16px;
+}
+.floating-content > div{
+  border-radius: 5px;
+  border: 1px solid #bec6c6;
+  color: #282e2e;
+}
+
+.register-url-link{
+  padding: 20px 28px;
+}
+
+.register-url-link a{
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
+  display: block;
+}
+
+.floating-content:first-child {
+  margin-top: 0px;
+}
+.course-register-information {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.course-detail-info-section .course-register-information {
+  border: 1.5px solid #e6e8ec;
+}
+
+.course-register-information-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 26px 31px 26px;
+  max-height: 193px;
+  width: 100%;
+}
+
+.course-register-information-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-register-information-register-section {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.course-register-information-register-section {
+  border-radius: 3px;
+}
+
+.course-register-information-info p,
+.course-register-information-info h2,
+.course-register-information-info span {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.course-register-information-header .course-detail-price {
+  color: #282e2e;
+  font-size: 30px;
+}
+.course-register-information-info > p {
+  float: right;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.course-register-information-header-stars .rating-horizontal {
+  margin: 0px !important;
+}
+
+.course-register-information-container button {
+  height: 45px;
+  margin-right: 12px;
+}
+
+.course-detail-price {
+  font-size: 24px;
+  color: #2ab27b;
+}
+
+.course-detail-price.price-not-reported {
+  font-size: 18px;
+  width: 100px;
+}
+
+.course-detail-hours {
+  font-size: 17px;
+  font-weight: 600;
+  color: #4c5656;
+}
+
+.course-detail-register {
+  display: flex !important;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.course-detail-register span {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  color: #282e2e;
+}
+
+@media (max-width: 991px) {
+  .course-register-information-info > p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .course-register-information-info {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+  .course-register-information-header .course-detail-price {
+    font-size: 20px;
+  }
+  .course-detail-register {
+    width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .floating-content{
+    margin-top: 0px;
+    padding: 0px;
+  }
+
+  .floating-content > div {
+    border: none;
+  }
+  .course-register-information {
+    padding: 10px 25px;
+    background-color: white;
+    box-shadow: 0 -7px 16px 0 rgba(0, 0, 0, 0.1);
+  }
+  .register-url-link{
+    padding: 18px 20px 20px 20px;
+    order: 3;
+  }
+  .course-register-information-container {
+    flex-direction: row;
+    border-radius: 0px;
+    padding: 0px;
+    height: 125px;
+    width: 100%;
+    z-index: 10;
+  }
+  .course-register-information-info {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  .course-register-information-info h2,
+  .course-register-information-info p {
+    margin-top: 0px;
+  }
+  .course-register-information-register-section .course-detail-register {
+    height: 72px;
+  }
+  .course-register-information-header .course-detail-price {
+    font-size: 26px;
+  }
+
+  .course-detail-price.price-not-reported {
+    font-size: 24px;
+    width: auto;
+  }
+  .course-register-information-info > p {
+    color: #282e2e;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+  }
+  .course-register-information-register-section,
+  .course-detail-register {
+    width: 199px;
+  }
+}
+@media (max-width: 600px) {
+  .course-register-information {
+    border: none !important;
+    flex-direction: column;
+    padding: 0 20px 10px 20px;
+    z-index: 11;
+  }
+  .course-register-information-header {
+    width: 50%;
+  }
+
+  .course-register-information-register-section,
+  .course-detail-register {
+    width: 199px;
+  }
+  .course-thumbnail-price.price-not-reported {
+    text-decoration: none;
+  }
+}
