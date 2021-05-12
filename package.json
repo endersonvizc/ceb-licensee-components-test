@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build-lib": "rm -rf dist && rollup -c"
+    "build-lib": "rm -rf dist && rollup -c && node deploy.local.js"
   },
   "keywords": [],
   "author": "",
